@@ -1,4 +1,4 @@
-"Team Roles" 
+Team Roles
 Project Manager : is responsible for distributing tasks across team members, planning work activities and updating project status
 UI/UX designer
 Thy design an easy to use and eye pleasing interfaces for a product
