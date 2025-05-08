@@ -7,6 +7,7 @@ They create codes and application front end and back end.
 Quality assurance engineer
 Their job is to verify whether an application meets the requirements both functional and non-functional.
 DevOperation engineers serve a link between unifying and automating changes quickly and keeping and application stable.
+<<<<<<< HEAD
 
 Technology Stack
 
@@ -24,3 +25,5 @@ GitHub Actions: A CI/CD tool integrated with GitHub, used to automate tasks like
 
 
 
+=======
+>>>>>>> 31a8487298394cba6b5c286993b66e70c9f74544
