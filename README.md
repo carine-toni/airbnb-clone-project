@@ -186,6 +186,36 @@ Secured endpoints with proper validation and error handling.
 Mobile-first UI design.
 
 Smooth navigation and user-friendly forms.
+ API Security
+ 1. Authentication
+What: Authentication ensures that the user is who they claim to be. We will use secure token-based authentication (e.g., JWT) for user login and API access.
+
+Why it's crucial: Authentication prevents unauthorized users from accessing private endpoints or performing sensitive operations (e.g., booking a property, accessing user profiles). Without it, anyone could access the system, posing significant risks to user data.
+
+2. Authorization
+What: Authorization defines what authenticated users can do within the system. For example, only the host (property owner) can edit the property details, and only customers can make bookings. This will be controlled by user roles.
+
+Why it's crucial: Authorization ensures that users only have access to the data and actions they are permitted to use, preventing potential abuse or unauthorized changes to the system (e.g., preventing one user from deleting another user's property).
+
+3. Rate Limiting
+What: Rate limiting will be implemented to restrict the number of requests a user or client can make to the API within a certain time frame (e.g., 100 requests per minute). This is to prevent abuse such as DDoS (Distributed Denial-of-Service) attacks.
+
+Why it's crucial: Rate limiting helps protect the server from overload and ensures fair access for all users. It also prevents malicious users from attempting brute force attacks on login endpoints or flooding the system with unnecessary requests.
+
+4. Encryption
+What: All sensitive data such as passwords, payment information, and user profiles will be encrypted both at rest and in transit. We will use SSL/TLS for encrypted communication between the client and server.
+
+Why it's crucial: Encryption protects sensitive information from being intercepted by attackers. For example, payment details need to be encrypted to prevent fraud, and user passwords should never be stored in plaintext.
+
+5. Input Validation and Sanitization
+What: The system will validate and sanitize all incoming data to ensure it adheres to expected formats. This will prevent SQL injection, cross-site scripting (XSS), and other forms of attacks that exploit input fields.
+
+Why it's crucial: Without proper validation and sanitization, the API is vulnerable to malicious input that could compromise the integrity of the system or expose sensitive data.
+
+6. Error Handling
+What: The API will implement proper error handling mechanisms to avoid revealing sensitive details in error messages, such as stack traces or database information.
+
+Why it's crucial: Exposing detailed error messages can give attackers clues about the structure of the system and how to exploit vulnerabilities. By masking this information, we reduce the risk of exploitation.
 
 
 
